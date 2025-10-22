@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Simples</title>
+    <title>Calculadora Atualizado</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Calculadora</h1>
-    </header>
-    <main>
-        <div class="calc">
-            <div class="display">
-                <input type="text" id="display" readonly>
-            </div>
-           
-            <div class="buttons">
-                <button onclick="clearDisplay()">C</button>
-                <button onclick="deleteLast()">DEL</button>
-                <button onclick="appendCharacter('/')">/</button>
-                <button onclick="appendCharacter('*')">*</button>
-                
-                <button onclick="appendCharacter('7')">7</button>
-                <button onclick="appendCharacter('8')">8</button>
-                <button onclick="appendCharacter('9')">9</button>
-                <button onclick="appendCharacter('+')">+</button>
 
-                <button onclick="appendCharacter('4')">4</button>
-                <button onclick="appendCharacter('5')">5</button>
-                <button onclick="appendCharacter('6')">6</button>
-                <button onclick="appendCharacter('-')">-</button>
+    <h1 class="titulo">Calculadora Atualizado</h1>
 
-                <button onclick="appendCharacter('1')">1</button>
-                <button onclick="appendCharacter('2')">2</button>
-                <button onclick="appendCharacter('3')">3</button>
-                <button onclick="calculateResult()">=</button>
+    <div class="calculadora">
+        <div class="display">
+            <input type="text" id="resultado" readonly placeholder="0">
+        </div>
 
-                <button onclick="appendCharacter('0')">0</button>
-                <button onclick="appendCharacter('.')">.</button>
+        <div class="botoes-grid">
+            <button class="operador btn-limpar">C</button>
+            <button class="operador btn-deletar">DEL</button>
+            <button class="operador">÷</button>
+            <button class="operador">x</button>
+
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador">+</button>
+
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador">-</button>
+
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador btn-igual">=</button>
+
+            <button class="numero btn-zero-expand">0</button>
+            <button class="numero">.</button>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <p>Gabriel Allan Ribeiro da Silva © 2024. Todos os direitos reservados.</p>
-    </footer>
+
+    <p class="assinatura">
+        Baseado no projeto de Gabriel Allan Ribeiro da Silva © 2024.
+    </p>
+
+    <script src="script.js"></script>
 </body>
 </html>
