@@ -1,0 +1,88 @@
+.calc {
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  background: #181c30;
+  border: 1px solid #2a3050;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.calc-display {
+  min-height: 90px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  background: #0b0e1a;
+  border-radius: 12px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.calc-expressao {
+  min-height: 1.2em;
+  color: #9aa3c7;
+  font-size: 0.95rem;
+}
+
+.calc-atual {
+  color: #e8eaf6;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.calc-teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calc-botao {
+  padding: 16px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e8eaf6;
+  background: #242a47;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.15s;
+}
+
+.calc-botao:hover {
+  filter: brightness(1.2);
+}
+
+.calc-botao:active {
+  transform: scale(0.95);
+}
+
+.calc-botao:focus-visible {
+  outline: 2px solid #7c8cff;
+  outline-offset: 2px;
+}
+
+.calc-funcao {
+  background: #3a4166;
+}
+
+.calc-operacao {
+  background: #4b5bd6;
+}
+
+.calc-igual {
+  background: #7c8cff;
+  color: #0f1220;
+  font-weight: 700;
+}
+
+.calc-largo {
+  grid-column: span 2;
+}
